@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="weather-container">
+      <h1>Today's Weather</h1>
+      <form id="location-form">
+        <input
+          type="text"
+          id="city"
+          name="city"
+          placeholder="Enter City"
+          required
+        />
+        <button type="submit">Get Weather</button>
+      </form>
+
+      <div id="weather-animation"></div>
+      <div id="weather-summary">
+        <h2 id="weather-main"></h2>
+        <p id="weather-description"></p>
+      </div>
+      <div id="temperature-info">
+        <p><strong>Temperature:</strong> <span id="temp"></span>°C</p>
+        <p><strong>Feels Like:</strong> <span id="feels_like"></span>°C</p>
+        <p><strong>Min Temperature:</strong> <span id="temp_min"></span>°C</p>
+        <p><strong>Max Temperature:</strong> <span id="temp_max"></span>°C</p>
+        <p><strong>Pressure:</strong> <span id="pressure"></span> hPa</p>
+        <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+      </div>
+      <div id="wind-info">
+        <p><strong>Wind Speed:</strong> <span id="speed"></span> m/s</p>
+      </div>
+      <div id="sun-info">
+        <p><strong>Sunrise:</strong> <span id="sunrise"></span></p>
+        <p><strong>Sunset:</strong> <span id="sunset"></span></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
