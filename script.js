@@ -5,7 +5,7 @@ document
 
     const city = document.getElementById("city").value;
     const API_KEY = "c9715d6050f20e3cf5bea18f4d06097f";
-    const geo_location_api = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${API_KEY}`;
+    const geo_location_api = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${API_KEY}`;
 
     async function fetchData(url) {
       try {
